@@ -47,7 +47,7 @@ const Home = async () => {
           Agendamentos
         </h2>
 
-        <Card className="">
+        <Card>
           <CardContent className="flex justify-between p-0">
             <div className="flex flex-col gap-2 py-5 pl-5">
               <Badge className="w-fit">Confirmado</Badge>
