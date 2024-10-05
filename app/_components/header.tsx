@@ -20,6 +20,7 @@ const Header = () => {
               <MenuIcon />
             </Button>
           </SheetTrigger>
+
           <SidebarSheet />
         </Sheet>
       </CardContent>

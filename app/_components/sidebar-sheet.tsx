@@ -1,12 +1,13 @@
 "use client"
 
-import { Button } from "./ui/button"
 import { CalendarIcon, HomeIcon, LogInIcon } from "lucide-react"
-import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet"
-import { quickSearchOptions } from "../_constants/search"
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
+import { quickSearchOptions } from "../_constants/search"
+import SignInDialog from "./sign-in-dialog"
+import { Button } from "./ui/button"
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog"
+import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet"
 
 const SidebarSheet = () => {
   return (
@@ -23,7 +24,9 @@ const SidebarSheet = () => {
               <LogInIcon />
             </Button>
           </DialogTrigger>
-          <DialogContent className="w-[90%]"></DialogContent>
+          <DialogContent className="w-[90%]">
+            <SignInDialog />
+          </DialogContent>
         </Dialog>
       </div>
 
