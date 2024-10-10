@@ -163,6 +163,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
                 Voltar
               </Button>
             </SheetClose>
+
             {isConfirmed && (
               <Dialog>
                 <DialogTrigger className="w-full">
@@ -170,6 +171,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
                     Cancelar Reserva
                   </Button>
                 </DialogTrigger>
+
                 <DialogContent className="w-[90%]">
                   <DialogHeader>
                     <DialogTitle>Você deseja cancelar sua reserva?</DialogTitle>
@@ -178,6 +180,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
                       recuperá-la. Essa ação é irreversível.
                     </DialogDescription>
                   </DialogHeader>
+
                   <DialogFooter className="flex flex-row gap-3">
                     <DialogClose asChild>
                       <Button variant="secondary" className="w-full">
