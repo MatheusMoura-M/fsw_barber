@@ -75,6 +75,7 @@ const Home = async () => {
             alt="Agende nos melhores com FSW Barber"
             src="/banner-01.png"
             fill
+            sizes="100%"
             className="rounded-xl object-cover"
           />
         </div>

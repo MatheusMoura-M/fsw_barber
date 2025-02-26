@@ -18,6 +18,7 @@ const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
           <Image
             alt={barbershop.name}
             fill
+            sizes="100%"
             className="rounded-2xl object-cover"
             src={barbershop.imageUrl}
           />
